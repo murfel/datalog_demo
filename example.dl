@@ -1,0 +1,27 @@
+.type Var <: symbol
+.type Obj <: symbol
+.type Field <: symbol
+
+.decl Assign( a:Var, b:Var )
+.input Assign(filename="assign.facts")
+.decl New( v:Var, o:Obj )
+.input New(filename="new.facts")
+.decl Load( a:Var, b:Var, f:Field )
+.input Load(filename="load.facts")
+.decl Store( a:Var, f:Field, b:Var )
+.input Store(filename="store.facts")
+
+.decl Alias( a:Var, b:Var ) 
+.output Alias
+
+Alias(X,X) :- Assign(X,_).
+Alias(X,X) :- Assign(_,X).
+
+Alias(X,Y) :- Assign(X,Y).
+Alias(X,Y) :- Load(X,A,F), Alias(A,B), Store(B,F,Y).
+
+.decl pointsTo( a:Var, o:Obj )
+.output pointsTo
+
+pointsTo(X,Y) :- New(X,Y).
+pointsTo(X,Y) :- Alias(X,Z), pointsTo(Z,Y).

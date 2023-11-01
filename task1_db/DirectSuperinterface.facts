@@ -1,0 +1,5 @@
+com.company.ClassInheritsInterface.A1	com.company.ClassInheritsInterface.Interface1
+com.company.ClassInheritsInterface.A1	com.company.ClassInheritsInterface.Interface2
+com.company.InterfaceInheritance.Interface3	com.company.InterfaceInheritance.Interface1
+com.company.InterfaceInheritance.Interface3	com.company.InterfaceInheritance.Interface2
+com.company.InterfaceInheritance.A1	com.company.InterfaceInheritance.Interface3

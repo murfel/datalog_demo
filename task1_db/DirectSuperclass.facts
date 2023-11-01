@@ -1,0 +1,16 @@
+com.company.MultilevelInheritance.A3	com.company.MultilevelInheritance.A2
+com.company.HybridInheritance.A2	com.company.HybridInheritance.A1
+com.company.SingleInheritance.A1	java.lang.Object
+com.company.ClassInheritsInterface.A1	java.lang.Object
+com.company.HybridInheritance.A4	com.company.HybridInheritance.A2
+com.company.SingleInheritance.A2	com.company.SingleInheritance.A1
+com.company.SingleInheritance.Main	java.lang.Object
+com.company.MultilevelInheritance.Main	java.lang.Object
+com.company.HybridInheritance.A3	com.company.HybridInheritance.A2
+com.company.InterfaceInheritance.Main	java.lang.Object
+com.company.MultilevelInheritance.A2	com.company.MultilevelInheritance.A1
+com.company.ClassInheritsInterface.Main	java.lang.Object
+com.company.MultilevelInheritance.A1	java.lang.Object
+com.company.InterfaceInheritance.A1	java.lang.Object
+com.company.HybridInheritance.A1	java.lang.Object
+com.company.HybridInheritance.Main	java.lang.Object
