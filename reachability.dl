@@ -1,0 +1,16 @@
+// Реализовать правило SinkReachable(caller, sink, N).
+// Которое показывает, что метод sink достижим из метода caller за N вызовов.
+
+.type Name <: symbol
+
+.decl SinkMethod(name: Name)
+.input SinkMethod(filename="sinkMethod.facts")
+
+.decl MethodInvocation(caller: Name, callee: Name)
+.input MethodInvocation(filename="MethodInvocation.facts")
+
+.decl SinkReachable(caller:Name, sink:Name, n:number)
+.output SinkReachable
+
+SinkReachable(sink, sink, 0) :- SinkMethod(sink).
+SinkReachable(caller, sink, n+1) :-  MethodInvocation(caller, intermediate), SinkReachable(intermediate, sink, n).
