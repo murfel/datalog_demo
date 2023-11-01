@@ -1,3 +1,10 @@
+# To run
+souffle -F example_db -D out example.dl
+souffle -F task1_db -D out inheritance.dl
+souffle -F task2_db -D out reachability.dl
+
+# Instructions
+
 0) Подготовка окружения
 Установить Souffle — это язык логического программирования с открытым исходным кодом, созданный под влиянием Datalog. 
 
