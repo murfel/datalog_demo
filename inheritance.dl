@@ -1,0 +1,11 @@
+.type Type <: symbol
+
+.decl InheritsFrom(x: Type, y: Type)
+.input InheritsFrom(filename="DirectSuperinterface.facts")
+.input InheritsFrom(filename="DirectSuperclass.facts")
+
+.decl SubClass(x:Type, y:Type)
+.output SubClass
+
+SubClass(X, Y) :- InheritsFrom(X, Y).
+SubClass(X, Z) :- SubClass(X, Y), InheritsFrom(Y, Z).
